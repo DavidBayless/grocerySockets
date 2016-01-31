@@ -13,5 +13,8 @@ body {
   text-align: center; }
   .list :nth-child(even) {
     background-color: #dedede; }
+  .list div {
+    height: 1.5rem;
+    text-align: center; }
 
 /*# sourceMappingURL=styles.css.map */
