@@ -24,19 +24,37 @@
         <h1>Welcome to Groceries-R-Us!</h1>
       </div>
     </div>
+    <div class='row editing'>
+      <div class='col-md-4 col-md-offset-2'>
+        <button class='btn btn-info'>Add an Item</button>
+      </div>
+      <div class='col-md-4'>
+        <button class='btn btn-warning'>Edit an Item</button>
+      </div>
+    </div>
     <div class='row'>
-      <div class='col-md-4 list'>
+      <div class='col-md-5 col-md-offset-1 list'>
         <h3>Name</h3>
-        <h5 ng-repeat='grocery in GC.groceries'>{{grocery.name}}</h5>
+        <div ng-repeat='grocery in GC.groceries'>
+          <h5>{{grocery.name}}</h5>
+        </div>
       </div>
-      <div class='col-md-4 list'>
+      <div class='col-md-2 list'>
         <h3>Quantity</h3>
-        <h5 ng-repeat='grocery in GC.groceries'>{{grocery.quantity}}</h5>
+        <div ng-repeat='grocery in GC.groceries'>
+          <h5>{{grocery.quantity}}</h5>
+        </div>
       </div>
-      <div class='col-md-4 list'>
-        <h3>Retrieved</h3>
+      <div class='col-md-1 list'>
+        <h3>Found</h3>
         <div  ng-repeat='grocery in GC.groceries' >
           <input type='checkbox'/>
+        </div>
+      </div>
+      <div class='col-md-2 list'>
+        <h3>Woops</h3>
+        <div ng-repeat='grocery in GC.groceries'>
+          <button class='btn btn-danger'>Remove</button>
         </div>
       </div>
     </div>
