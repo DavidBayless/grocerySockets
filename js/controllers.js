@@ -1,7 +1,7 @@
-app.controller('TemplateController', [TemplateController]);
+app.controller('groceryController', [groceryController]);
 // Change Me
 
-function TemplateController() {
+function groceryController() {
   var vm = this;
-  vm.title = 'Angular Template'
+  vm.title = 'Angular Template';
 }
